@@ -1,7 +1,7 @@
 $(function() {
   if ($('body.controller-wiki.action-show #content section').length > 0) {
     var first_p = $('#content .wiki-page').children().first();
-    if (first_p.text() == '' && first_p.prop("tagName") == 'p') {
+    if (first_p.text() == '' && first_p.prop("tagName") == 'P') {
       first_p.remove();
     }
 
