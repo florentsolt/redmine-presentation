@@ -7,6 +7,6 @@ $(function() {
 
     var url = window.location.pathname + '/presentation';
     $("body.controller-wiki.action-show #content .contextual")
-      .append($('<a>').attr('href', url).addClass('icon icon-test').text('Presentation'));
+      .append($('<a>').attr('target', '_blank').attr('href', url).addClass('icon icon-test').text('Presentation'));
   }
 });
