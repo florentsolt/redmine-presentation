@@ -40,9 +40,23 @@ Redmine::WikiFormatting::Macros.macro :slide do |obj, args, text|
   "</section>".html_safe
 end
 
-class PresentationViewListener < ::Redmine::Hook::ViewListener
+class PresentationViewListener < Redmine::Hook::ViewListener
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
     javascript_include_tag("run.js", :plugin => "redmine_presentation")
   end
+end
+
+module Redmine::WikiFormatting::Textile::Helper
+  def heads_for_wiki_formatter_with_slide
+    heads_for_wiki_formatter_without_slide
+    unless @heads_for_wiki_formatter_with_slide_included
+      content_for :header_tags do
+        javascript_include_tag('jstoolbar', :plugin => 'redmine_presentation')
+      end
+      @heads_for_wiki_formatter_with_slide_included = true
+    end
+  end
+
+  alias_method_chain :heads_for_wiki_formatter, :slide
 end

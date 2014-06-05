@@ -8,6 +8,19 @@
   padding: 0em 1em;
 }
 
+.reveal table {
+  margin: auto;
+}
+
+.reveal table td {
+  vertical-align: middle;
+}
+
+.reveal table td img {
+  vertical-align: middle;
+}
+
+
 /************* CodeRay styles (from application.css) *************/
 .syntaxhl div {display: inline;}
 .syntaxhl .line-numbers {padding: 2px 4px 2px 4px; background-color: #eee; margin:0px 5px 0px 0px;}
