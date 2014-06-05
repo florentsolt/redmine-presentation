@@ -2,7 +2,7 @@ Redmine::Plugin.register :redmine_presentation do
   name 'Redmine Presentation plugin'
   author 'Florent Solt'
   description 'Presentation plugin for Redmine that transfrom wiki pages to slides'
-  version '0.1'
+  version '0.2'
   url 'https://github.com/florentsolt/redmine-presentation'
   author_url 'https://github.com/florentsolt/redmine-presentation'
 end
