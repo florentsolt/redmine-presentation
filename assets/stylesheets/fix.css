@@ -2,6 +2,35 @@
   display: none;
 }
 
+.reveal p,
+.reveal section {
+  text-align: left;
+}
+
+.reveal h1,
+.reveal h2,
+.reveal h3,
+.reveal h4,
+.reveal h5 {
+  text-align: center;
+}
+
+.reveal ul {
+  display: block;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.reveal section img {
+  display: block;
+  margin: 15px auto;
+}
+
+.reveal blockquote {
+  margin-top: 1em;
+  padding: 5px 1em;
+}
+
 .reveal pre {
   background-color: rgba(255,255,255,0.5);
   color: #222;
