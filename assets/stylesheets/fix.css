@@ -28,13 +28,30 @@
 
 .reveal blockquote {
   margin-top: 1em;
-  padding: 5px 1em;
+  padding: 0.5em 1em;
 }
 
-.reveal pre {
-  background-color: rgba(255,255,255,0.5);
+.reveal blockquote ul,
+.reveal blockquote ol {
+  margin-bottom: 0;
+}
+
+.reveal ul ul,
+.reveal ul ol,
+.reveal ol ul,
+.reveal ol ol {
+  margin-top: 0.2em;
+  margin-bottom: 0.4em;
+}
+
+.reveal blockquote p:last-child {
+  display: inherit;
+}
+
+ .reveal pre {
+  background: #eee;
   color: #222;
-  padding: 0em 1em;
+  padding: 1em;
 }
 
 .reveal table {

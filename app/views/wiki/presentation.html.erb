@@ -4,11 +4,13 @@
   <head>
     <meta charset="utf-8">
 
-    <title>Presentation</title>
+    <title><%= @page.title.titleize %> — <%= @project %></title>
 
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <link rel='shortcut icon' href='/plugin_assets/redmine_presentation/images/favicon.png' />
 
     <%= stylesheet_link_tag "reveal.min.css", :plugin => "redmine_presentation" %>
     <%= stylesheet_link_tag "theme", :plugin => "redmine_presentation" %>
@@ -38,7 +40,6 @@
     <%= javascript_include_tag "reveal.min.js", :plugin => "redmine_presentation" %>
     
 		<script>
-
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
@@ -48,6 +49,12 @@
 				center: true,
 				slideNumber: true,
 				mouseWheel: true,
+
+        width: 960,
+        height: 700,
+        
+        minScale: 0.1,
+        maxScale: 1.0,
 
 				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
 				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
