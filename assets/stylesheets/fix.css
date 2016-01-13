@@ -157,3 +157,9 @@
 .syntaxhl .change .change { color: #88f }
 .syntaxhl .head .head { color: #f4f }
 
+
+@media print {
+    .reveal .slide-number {
+        display: none;
+    }
+}
