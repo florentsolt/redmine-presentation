@@ -2,6 +2,7 @@
   display: none;
 }
 
+/*
 .reveal p,
 .reveal section {
   text-align: left;
@@ -65,7 +66,7 @@
 .reveal table td img {
   vertical-align: middle;
 }
-
+*/
 
 /************* CodeRay styles (from application.css) *************/
 .syntaxhl div {display: inline;}

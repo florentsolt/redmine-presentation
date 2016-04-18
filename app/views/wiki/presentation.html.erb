@@ -12,19 +12,21 @@
 
     <link rel='shortcut icon' href='/plugin_assets/redmine_presentation/images/favicon.png' />
 
-    <%= stylesheet_link_tag "reveal.min.css", :media => "all", :plugin => "redmine_presentation" %>
-    <%= stylesheet_link_tag "theme", :media => "all", :plugin => "redmine_presentation" %>
+    <%= stylesheet_link_tag "reveal.css", :media => "all", :plugin => "redmine_presentation" %>
+    <%= stylesheet_link_tag "theme/league", :media => "all", :plugin => "redmine_presentation" %>
     <%= stylesheet_link_tag "fix", :media => "all", :plugin => "redmine_presentation" %>
 
 		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
 		<script>
-			if( window.location.search.match( /print-pdf/gi ) ) {
-				var link = document.createElement( 'link' );
-				link.rel = 'stylesheet';
-				link.type = 'text/css';
+            var link = document.createElement( 'link' );
+            link.rel = 'stylesheet';
+            link.type = 'text/css';
+			if (window.location.search.match(/print-pdf/gi)) {
 				link.href = '/plugin_assets/redmine_presentation/stylesheets/print/pdf.css';
-				document.getElementsByTagName( 'head' )[0].appendChild( link );
-			}
+			} else {
+                link.href = '/plugin_assets/redmine_presentation/stylesheets/print/paper.css';
+            }
+            document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
 	</head>
 	<body>
@@ -34,9 +36,9 @@
       </div>
     </div>
 
-    <%= javascript_include_tag "head.min.js", :plugin => "redmine_presentation" %>
-    <%= javascript_include_tag "reveal.min.js", :plugin => "redmine_presentation" %>
-    
+    <%# javascript_include_tag "head.min.js", :plugin => "redmine_presentation" %>
+    <%= javascript_include_tag "reveal.js", :plugin => "redmine_presentation" %>
+
 		<script>
 			// Full list of configuration options available here:
 			// https://github.com/hakimel/reveal.js#configuration
@@ -50,7 +52,7 @@
 
         width: 960,
         height: 700,
-        
+
         minScale: 0.1,
         maxScale: 1.0,
 
@@ -59,10 +61,10 @@
 
 				// Optional libraries used to extend on reveal.js
 				dependencies: []
-        
+
 			});
 
 		</script>
-    
+
   </body>
 </html>
