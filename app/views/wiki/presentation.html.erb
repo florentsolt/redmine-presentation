@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
 
-  <head>
+<head>
     <meta charset="utf-8">
 
     <title><%= @page.title.titleize %> — <%= @project %></title>
@@ -12,59 +12,26 @@
 
     <link rel='shortcut icon' href='/plugin_assets/redmine_presentation/images/favicon.png' />
 
-    <%= stylesheet_link_tag "reveal.css", :media => "all", :plugin => "redmine_presentation" %>
-    <%= stylesheet_link_tag "theme/league", :media => "all", :plugin => "redmine_presentation" %>
+    <%= stylesheet_link_tag "screen-16x10.css", :media => "all", :plugin => "redmine_presentation" %>
     <%= stylesheet_link_tag "fix", :media => "all", :plugin => "redmine_presentation" %>
 
-		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
-		<script>
-            var link = document.createElement( 'link' );
-            link.rel = 'stylesheet';
-            link.type = 'text/css';
-			if (window.location.search.match(/print-pdf/gi)) {
-				link.href = '/plugin_assets/redmine_presentation/stylesheets/print/pdf.css';
-			} else {
-                link.href = '/plugin_assets/redmine_presentation/stylesheets/print/paper.css';
+</head>
+<body class="shower list">
+    <header class="caption">
+        <h1><%= @page.title.titleize %></h1>
+        <p><%= @project %></p>
+    </header>
+    <%= textilizable @content, :text, :attachments => @content.page.attachments  %>
+
+    <div class="progress"></div>
+    <%= javascript_include_tag "shower.min.js", :plugin => "redmine_presentation" %>
+
+    <script type="text/javascript">
+        Array.from(document.body.getElementsByTagName('img')).forEach(function(img) {
+            if (img.parentNode.tagName == 'P') {
+                img.parentNode.className = "with-img";
             }
-            document.getElementsByTagName( 'head' )[0].appendChild( link );
-		</script>
-	</head>
-	<body>
-    <div class="reveal">
-      <div class="slides">
-          <%= textilizable @content, :text, :attachments => @content.page.attachments  %>
-      </div>
-    </div>
-
-    <%# javascript_include_tag "head.min.js", :plugin => "redmine_presentation" %>
-    <%= javascript_include_tag "reveal.js", :plugin => "redmine_presentation" %>
-
-		<script>
-			// Full list of configuration options available here:
-			// https://github.com/hakimel/reveal.js#configuration
-			Reveal.initialize({
-				controls: false,
-				progress: true,
-				history: true,
-				center: true,
-				slideNumber: false,
-				mouseWheel: true,
-
-        width: 960,
-        height: 700,
-
-        minScale: 0.1,
-        maxScale: 1.0,
-
-				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
-				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
-
-				// Optional libraries used to extend on reveal.js
-				dependencies: []
-
-			});
-
-		</script>
-
+        });
+    </script>
   </body>
-</html>
+  </html>

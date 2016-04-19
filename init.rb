@@ -35,7 +35,7 @@ Redmine::AccessControl.permission(:view_wiki_pages).instance_eval do
 end
 
 Redmine::WikiFormatting::Macros.macro :slide do |obj, args, text|
-  "<section>".html_safe + 
+  "<section class='slide'>".html_safe +
   textilizable(text, :attachments => obj.page.attachments) +
   "</section>".html_safe
 end

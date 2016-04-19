@@ -2,68 +2,40 @@
   display: none;
 }
 
-.reveal p,
-.reveal section {
+section > p.with-img {
+  max-width: 80%;
+  max-height: 80%;
   text-align: left;
 }
 
-.reveal h1,
-.reveal h2,
-.reveal h3,
-.reveal h4,
-.reveal h5 {
+section.slide pre code {
+  line-height: 1.3;
+  font-size: 80%;
+}
+
+section > p.with-img > img {
+  max-width: 100%;
+  max-height: 100%;
+  vertical-align: middle;
+}
+
+section > h1 {
+  position:absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
   text-align: center;
+  line-height: 1;
+  font-size: 100px;
+  transform: translateY(-50%);
 }
 
-.reveal ul {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 1em;
+section > h3 {
+  font-weight: bold;
 }
 
-.reveal section img {
-  display: block;
-  margin: 15px auto;
-}
-
-.reveal blockquote {
-  margin-top: 1em;
-  padding: 0.5em 1em;
-}
-
-.reveal blockquote ul,
-.reveal blockquote ol {
-  margin-bottom: 0;
-}
-
-.reveal ul ul,
-.reveal ul ol,
-.reveal ol ul,
-.reveal ol ol {
-  margin-top: 0.2em;
-  margin-bottom: 0.4em;
-}
-
-.reveal blockquote p:last-child {
-  display: inherit;
-}
-
- .reveal pre {
-  background: #eee;
-  color: #222;
-  padding: 1em;
-}
-
-.reveal table {
-  margin: auto;
-}
-
-.reveal table td {
-  vertical-align: middle;
-}
-
-.reveal table td img {
-  vertical-align: middle;
+section.slide {
+  padding-top: 50px;
 }
 
 /************* CodeRay styles (from application.css) *************/
@@ -156,9 +128,3 @@
 .syntaxhl .change .change { color: #88f }
 .syntaxhl .head .head { color: #f4f }
 
-
-@media print {
-    .reveal .slide-number {
-        display: none;
-    }
-}
