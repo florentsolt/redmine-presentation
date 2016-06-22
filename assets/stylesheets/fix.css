@@ -39,7 +39,7 @@ section > h1 {
   transform: translateY(-50%);
   color: #585a5e;
   font-weight: bold;
-  text-shadow: 2px 2px 1px #aaa;
+  text-shadow: 2px 2px 0px #ddd;
 }
 
 section > h3 {
