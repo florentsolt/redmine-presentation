@@ -1,3 +1,11 @@
+section[id="1"].slide::after {
+  visibility: hidden;
+}
+
+.slide h2 {
+  padding-right: 60px;
+}
+
 .wiki-anchor {
   display: none;
 }
@@ -29,6 +37,9 @@ section > h1 {
   line-height: 1;
   font-size: 100px;
   transform: translateY(-50%);
+  color: #585a5e;
+  font-weight: bold;
+  text-shadow: 2px 2px 1px #aaa;
 }
 
 section > h3 {
