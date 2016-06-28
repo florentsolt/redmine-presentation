@@ -1,3 +1,11 @@
+section[id="1"].slide::after {
+  visibility: hidden;
+}
+
+.slide h2 {
+  padding-right: 60px;
+}
+
 .wiki-anchor {
   display: none;
 }
@@ -23,12 +31,15 @@ section > p.with-img > img {
 section > h1 {
   position:absolute;
   top: 50%;
-  left: 0;
-  width: 100%;
+  left: 5%;
+  width: 90%;
   text-align: center;
   line-height: 1;
   font-size: 100px;
   transform: translateY(-50%);
+  color: #585a5e;
+  font-weight: bold;
+  text-shadow: 2px 2px 0px #ddd;
 }
 
 section > h3 {
