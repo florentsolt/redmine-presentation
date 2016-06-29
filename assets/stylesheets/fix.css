@@ -58,9 +58,9 @@ section[id="1"].slide::after {
 }
 
 section > p.with-img {
-  max-width: 80%;
-  max-height: 80%;
+  max-width: 90%;
   text-align: left;
+  height: 400px;
 }
 
 section.slide pre code {
