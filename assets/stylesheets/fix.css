@@ -1,3 +1,36 @@
+.slide h1,
+.slide h2,
+.slide h3,
+.slide h4,
+.slide h5,
+.slide ol li:before,
+.slide ul li:before,
+.shower {
+  color: #005386;
+}
+
+.slide a {
+  color: #73cb12;
+}
+
+.progress {
+  border-color: #73cb12;
+  border-right-color: transparent;
+}
+
+section.slide::after {
+  background: none;
+  color: rgb(91, 127, 149);
+  left: 0px;
+  bottom: 0px;
+  top: auto;
+  right: auto;
+  height: 50px;
+  padding: 0px;
+  font-size: 70%;
+}
+
+section[id="cover"].slide::after,
 section[id="1"].slide::after {
   visibility: hidden;
 }
@@ -9,7 +42,6 @@ section[id="1"].slide::after {
 .wiki-anchor {
   display: none;
 }
-
 
 section > p.with-img {
   max-width: 80%;
@@ -29,7 +61,7 @@ section > p.with-img > img {
 }
 
 section > h1 {
-  position:absolute;
+  position: absolute;
   top: 50%;
   left: 5%;
   width: 90%;
@@ -48,13 +80,32 @@ section > h3 {
 
 section.slide {
   padding-top: 50px;
+  background-image: url(../images/background.svg);
+}
 
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+52,d1d1d1+100 */
-  background: rgb(255,255,255); /* Old browsers */
-  background: -moz-linear-gradient(top,  rgba(255,255,255,1) 52%, rgba(209,209,209,1) 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top,  rgba(255,255,255,1) 52%,rgba(209,209,209,1) 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom,  rgba(255,255,255,1) 52%,rgba(209,209,209,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#d1d1d1',GradientType=0 ); /* IE6-9 */
+section[id="cover"].slide,
+section[id="1"].slide {
+  background-image: url(../images/cover.svg);
+}
+
+section[id="cover"].slide h1,
+section[id="1"].slide h1 {
+  position: static;
+  transform: none;
+  font-size: 50px;
+  text-align: left;
+  width: auto;
+  margin-top: 80px;
+  margin-left: 370px;
+  width: 500px;
+}
+
+section[id="cover"].slide h2,
+section[id="1"].slide h2 {
+  margin-top: 20px;
+  font-size: 40px;
+  margin-left: 370px;
+  width: 500px;
 }
 
 /************* CodeRay styles (from application.css) *************/
