@@ -28,7 +28,7 @@
          id="stop4291" />
       <stop
          id="stop4723"
-         offset="0.20971557"
+         offset="0.25073862"
          style="stop-color:#ffffff;stop-opacity:1" />
       <stop
          style="stop-color:#07538b;stop-opacity:1"
@@ -56,7 +56,7 @@
        x2="971.42853"
        y2="990.93365"
        gradientUnits="userSpaceOnUse"
-       gradientTransform="matrix(0.9825641,0,0,0.5280241,16.937729,496.0381)" />
+       gradientTransform="matrix(0.9825641,0,0,0.4662918,16.937729,561.17922)" />
     <clipPath
        clipPathUnits="userSpaceOnUse"
        id="clipPath20-7">
@@ -81,11 +81,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.6920715"
-     inkscape:cx="4.3510495"
-     inkscape:cy="328.45473"
+     inkscape:zoom="0.72778185"
+     inkscape:cx="483.66142"
+     inkscape:cy="301.1811"
      inkscape:document-units="px"
-     inkscape:current-layer="text4727"
+     inkscape:current-layer="layer1"
      showgrid="false"
      inkscape:window-width="1405"
      inkscape:window-height="855"
@@ -100,7 +100,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -113,12 +113,12 @@
        style="opacity:1;fill:url(#linearGradient4295);fill-opacity:1;stroke:none"
        id="rect3487"
        width="971.33478"
-       height="67.888809"
+       height="59.951797"
        x="0.093773134"
-       y="985.33057" />
+       y="993.26758" />
     <g
        id="g10"
-       transform="matrix(0.21647126,0,0,-0.21647126,49.493414,1030.8084)">
+       transform="matrix(0.20481052,0,0,-0.20481052,67.623595,1036.0974)">
       <g
          id="g12"
          transform="scale(0.1,0.1)">
@@ -188,7 +188,7 @@
     </g>
     <g
        id="g10-3"
-       transform="matrix(0.76428425,0,0,-0.76428419,594.42785,1030.5324)">
+       transform="matrix(0.72311424,0,0,-0.72311419,599.12903,1035.8363)">
       <g
          id="g12-9"
          transform="scale(0.1,0.1)">
