@@ -23,6 +23,8 @@
     </header>
     <%= textilizable @content, :text, :attachments => @content.page.attachments  %>
 
+    <p><section class='slide backcover'></section></p>
+
     <div class="progress"></div>
     <%= javascript_include_tag "shower.min.js", :plugin => "redmine_presentation" %>
 

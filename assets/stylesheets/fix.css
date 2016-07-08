@@ -58,7 +58,7 @@ section[id="1"].slide::after {
 }
 
 section > p.with-img {
-  max-width: 90%;
+  max-width: 100%;
   text-align: left;
   height: 400px;
 }
@@ -95,6 +95,11 @@ section > h3 {
 section.slide {
   padding-top: 50px;
   background-image: url(../images/background.svg);
+}
+
+section.backcover {
+  padding-top: 50px;
+  background-image: url(../images/backcover.svg);
 }
 
 section[id="cover"].slide,
