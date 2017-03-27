@@ -10,3 +10,4 @@ $(function() {
       .append($('<a>').attr('target', '_blank').attr('href', url).addClass('icon icon-test').text('Presentation'));
   }
 });
+

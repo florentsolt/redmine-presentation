@@ -43,6 +43,7 @@ end
 class PresentationViewListener < Redmine::Hook::ViewListener
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
+    stylesheet_link_tag("wiki-slide.css", :plugin => "redmine_presentation") +
     javascript_include_tag("run.js", :plugin => "redmine_presentation")
   end
 end
