@@ -29,4 +29,6 @@
   margin: 0px;
 }
 
-
+.wiki .slide > p {
+  padding-left: 40px;
+}
