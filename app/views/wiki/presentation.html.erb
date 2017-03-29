@@ -21,7 +21,7 @@
         <h1><%= @page.title.titleize %></h1>
         <p><%= @project %></p>
     </header>
-    <%= textilizable @content, :text, :attachments => @content.page.attachments  %>
+    <%= textilizable(@content, :text, :attachments => @content.page.attachments).gsub(/<p>(<\/?section[^>]*>)<\/p>/, '\1').html_safe %>
 
     <p><section class='slide backcover'></section></p>
 
