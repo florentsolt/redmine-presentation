@@ -3,7 +3,7 @@ jsToolBar.prototype.elements.slide = {
   type: 'button',
   title: 'Slide',
   fn: {
-    wiki: function() { this.encloseLineSelection('{{slide\n', '\n}}') }
+    wiki: function() { this.encloseLineSelection('{{slide_start}}\n\n', '\n\n{{slide_end}}\n') }
   }
 }
 

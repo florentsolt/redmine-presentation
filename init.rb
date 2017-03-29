@@ -40,6 +40,14 @@ Redmine::WikiFormatting::Macros.macro :slide do |obj, args, text|
   "</section>".html_safe
 end
 
+Redmine::WikiFormatting::Macros.macro :slide_start do |obj, args, text|
+  "<section class='slide'>".html_safe
+end
+
+Redmine::WikiFormatting::Macros.macro :slide_end do |obj, args, text|
+  "</section>".html_safe
+end
+
 class PresentationViewListener < Redmine::Hook::ViewListener
   # Adds javascript and stylesheet tags
   def view_layouts_base_html_head(context)
